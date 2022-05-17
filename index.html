@@ -10,12 +10,15 @@
     <body>
         <div id="app" class="main">
             <img
-                src="https://randomuser.me/api/portraits/men/10.jpg"
+                v-bind:src="picture"
                 alt="user image profile"
+                :class="gender"
             />
-            <h1>John Wick</h1>
-            <h3>email: john@gmail.com</h3>
-            <button>generate new user</button>
+            <h1>{{firstName}} {{lastName}}</h1>
+            <h3>email: {{email}}</h3>
+            <button :class="gender" v-on:click="getUser()">
+                generate new user
+            </button>
         </div>
 
         <script src="https://unpkg.com/vue@3"></script>

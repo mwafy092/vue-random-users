@@ -33,16 +33,14 @@ img {
     margin-bottom: 1rem;
 }
 
-.men {
+.male {
     border-color: steelblue;
     background-color: steelblue;
-    color: #333;
 }
 
-.women {
+.female {
     border-color: pink;
     background-color: pink;
-    color: pink;
 }
 
 button {
